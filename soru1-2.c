@@ -5,15 +5,15 @@
 
 int main(int argc, char *argv[]) {
 	
-	int kaanArray[SIZE];
+	int arr[SIZE];
 	int counter=0;
 	int i=0;
 
 		//ARRAY DOLDURMA
 	for(i=0;i<=SIZE;i++){
-		scanf("%d",&kaanArray[i]);
+		scanf("%d",&arr[i]);
 		counter++;
-		if(kaanArray[i]==-1){
+		if(arr[i]==-1){
 			break;
 		}
 	}
@@ -21,39 +21,39 @@ int main(int argc, char *argv[]) {
 	
 	for(i=0;i<counter;i++){
 		
-		if(kaanArray[i]==-1){
+		if(arr[i]==-1){
 				break;
 		}
 			
-		if(kaanArray[i]<kaanArray[i+1]){
+		if(arr[i]<arr[i+1]){
 		
-			while(kaanArray[i]<kaanArray[i+1]){
-				printf("%d ",kaanArray[i]);
+			while(arr[i]<arr[i+1]){
+				printf("%d ",arr[i]);
 				i++;
 			}
 			
-			if(kaanArray[i]==-1){
+			if(arr[i]==-1){
 				break;
 			}
-			printf("%d ",kaanArray[i]);
+			printf("%d ",arr[i]);
 			printf("\n");
 		}
 		
-		else if(kaanArray[i]>kaanArray[i+1]){
+		else if(arr[i]>arr[i+1]){
 		
-			while(kaanArray[i]>kaanArray[i+1]){
-				printf("%d ",kaanArray[i]);
+			while(arr[i]>arr[i+1]){
+				printf("%d ",arr[i]);
 				i++;
 			}
 			
-			if(kaanArray[i]==-1){
+			if(arr[i]==-1){
 				break;
 			}
-			printf("%d ",kaanArray[i]);
+			printf("%d ",arr[i]);
 			printf("\n");
 		}
 		
-		if(kaanArray[i]==-1){
+		if(arr[i]==-1){
 				break;
 		}
 
